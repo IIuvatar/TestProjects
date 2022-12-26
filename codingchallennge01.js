@@ -1,10 +1,10 @@
 
 // BMI = mass / height ** 2 = mass / (height * height)
 
-
-const massMark = 78;
+/*
+const massMark = 150;
 const heightMark = 1.69;
-const massJohn = 92;
+const massJohn = 85;
 const heightJohn = 1.95;
 
 const bmiMark = massMark / (heightMark ** 2);
@@ -64,15 +64,90 @@ if(bmiJohn > bmiMark) {
 }
 
 
-let firstName1;
-let firstName2;
+const firstName1 = 'John';
+const firstName2 = 'Mark';
 
 if(bmiJohn > bmiMark) {
-    firstName1 = `John`;
-    firstName2 = `Mark`;
-    console.log(`${firstName1}'s BMI ${bmiJohn} is higher than ${firstName2}'s ${bmiMark}`);
+    console.log(
+    `${firstName1}'s BMI (${bmiJohn}) is higher \n\
+    than ${firstName2}'s ${bmiMark}`);
 } else {
-    firstName1 = `John`;
-    firstName2 = `Mark`;
-    console.log(`${firstName2}'s BMI is higher than John's`)
+    console.log(
+    `${firstName2}'s BMI ${bmiMark} is higher \n\
+    than ${firstName1}'s ${bmiJohn}`);
 }
+
+
+// Type Conversion
+
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(inputYear + 18);
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// Type coerciom
+
+console.log(`I'am ` + 23 + ` years old`);
+console.log(`I'am ` + '23' + ` years old`);
+
+console.log(`23` - '10' - 3);
+console.log(`23` * `2`);
+
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
+
+
+
+
+
+// FALSE value: 0, undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 0;
+if (money) {
+    console.log(`Don't spend it all`);
+} else {
+    console.log('You should get a job');
+}
+
+const height = (String(0))
+if (height) {
+    console.log(`Høyde er definert`);
+    console.log(height);
+} else {
+    console.log('Høyde er ikke definert');
+    console.log(height);
+}
+
+*/
+
+
+// STRICT and LOOSE. === STRICT: No Conversion. == LOOSE: Conversion
+// ALWAYS use STRICT!!!
+
+const age = 18;
+if(age == `18`) console.log(`LOGged`);
+
+const favorite = Number(prompt(`Whats a number?`));
+
+if (favorite === 23) {
+    console.log(`It works`);
+    console.log(favorite);
+    console.log(typeof favorite);
+} else if(favorite === 7) {
+    console.log(`The number is 7`)
+} else {
+    console.log(`Number is not 23 or 7`)
+}
+
