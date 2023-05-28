@@ -1,0 +1,8 @@
+
+TYPE Zone :
+    STRUCT
+            SetPoint : INT := 50; (* Setpoint for heatzones *)
+            MaxDeviation: INT := 5; (* Max deviation from setpoint *)
+            MinDeviation: INT := 5; (* Min deviation from setpoint *)
+    END_STRUCT
+END_TYPE 
